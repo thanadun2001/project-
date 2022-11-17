@@ -1,0 +1,202 @@
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/img/kmrroad.jpg");
+  font-family: "Bai Jamjuree", sans-serif;
+}
+header{
+    position: relative;
+}
+@media only screen and (min-width: 320px) {
+ .container{
+     margin:10% auto;
+     background:white;
+     animation: mymove 1.25s ;
+     box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+     height: 60px;
+     width: 500px;
+     border-radius:20px;
+ }
+ @keyframes mymove {
+    from {opacity:0}
+    to {opacity:1}
+}  
+/* For mobile phones: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+ .container{
+     margin:10% auto;
+     background:white;
+     animation: mymove 1.25s ;
+     box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+     height: 60px;
+     width: 500px;
+     border-radius:20px;
+ }
+ @keyframes mymove {
+    from {opacity:0}
+    to {opacity:1}
+}   
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+/* import font */
+
+@font-face {
+    font-family: 'Surafont Tulakhom';
+    src: url('../font/SurafontTulakhom-Regular.woff2') format('woff2'),
+        url('../font/SurafontTulakhom-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* search bar */
+
+#wrap {
+  margin: 7px 200px;
+  display: inline-block;
+  height: 30px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+input[type="text"] {
+  height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+  
+}
+
+input[type="text"]:focus:hover {
+  border-bottom: 1px solid #333;
+  margin: -15px 8px;
+  font-size: 17px;
+}
+
+input[type="text"]:focus {
+  width: 250px;
+  z-index: 1;
+  border-bottom: 1px solid #333;
+  cursor: text;
+  margin: -15px 8px;
+  font-size: 17px;
+ 
+}
+input[type="submit"] {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: url(https://img.icons8.com/ios-glyphs/512/search.png) center center no-repeat;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity .4s ease;
+  background-size: cover;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+}
+
+/* icon  */
+.user,i{
+  background-size: cover;
+  height: 20px;
+  width: 3px;
+  position: absolute;
+  margin: 0px 20px;
+  top: -2px;
+  z-index: 3;
+  opacity: 0.9;
+}
+
+.Notifications{
+  background-size: cover;
+  height: 20px;
+  width: 3px;
+  position: absolute;
+  margin:  0px 9px;
+  top: -2px;
+  z-index: 3;
+  left: 55px;
+  opacity: 0.9;
+}
+.ShoppingCart{
+  background-size: cover;
+  height: 20px;
+  width: 3px;
+  position: absolute;
+  margin: 0px -3px ;
+  top: -2px;
+  z-index: 3;
+  left: 111px;
+  opacity: 0.9;
+}
+/* logo */
+.logo img{
+  margin: 20px 31px;
+}
+p{
+  font-size:20px;
+  color:black;
+  font-family: "Bai Jamjuree", sans-serif;
+  margin:-120px 150px ; 
+  text-shadow: 2px 1px #F59B00;
+}
